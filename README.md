@@ -9,7 +9,9 @@
 This Python script implements the TOPSIS method for multi-criteria decision-making. It takes a CSV file containing a decision matrix, weights, and impacts as input, and produces a ranked result based on the TOPSIS score.
 
 ## Installation
+```bash
 pip install Topsis-Himanshu-102103568
+```
 
 ## Usage
 
@@ -26,10 +28,10 @@ OR
 
 You can use this package via command line as:
 ```bash
-python [pythonFileName] [InputDataFile as .csv] [Weights as a string] [Impacts as a string] [ResultFileName as .csv]
+python -m Topsis_Himanshu_102103568.topsis [InputDataFile as .csv] [Weights as a string] [Impacts as a string] [ResultFileName as .csv]
 ```
 
-- `InputDataFile`: Path to the CSV file containing the decision matrix.
+- `InputDataFile`: Path to the CSV file containing the input data.
 - `Weights`: Comma-separated weights for each criterion.
 - `Impacts`: Comma-separated impact direction for each criterion (`+` for maximization, `-` for minimization).
 - `ResultFileName`: Name of the file to save the TOPSIS results.
@@ -78,4 +80,8 @@ The script generates a CSV file containing the TOPSIS score and rank for each ob
 - If the columns from the 2nd to the last do not contain numeric values, a `ValueError` will be raised.
 - Any unexpected errors during the execution will be displayed.
 
+## LICENSE
 
+(c) 2024 Himanshu Bansal
+
+This project is licensed under the [MIT License](LICENSE).
