@@ -1,27 +1,38 @@
-```markdown
 # Project Description
-for: Assignment-1(UCS654)
-Submitted by: Himanshu Bansal
-Roll no: 102103568
-Group: 3COE20
+- for: Assignment-1(UCS654)
+- Submitted by: Himanshu Bansal
+- Roll no: 102103568
+- Group: 3COE20
 
-```markdown
-# What is TOPSIS?
+# TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)
 
-TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) is a multi-criteria decision analysis method that helps in making decisions based on multiple criteria. This Python package provides a command-line interface for performing TOPSIS analysis on a given dataset.
+This Python script implements the TOPSIS method for multi-criteria decision-making. It takes a CSV file containing a decision matrix, weights, and impacts as input, and produces a ranked result based on the TOPSIS score.
 
-## Installation
+## Usage
 
-To install the TOPSIS package, you can use the following command:
+- `InputDataFile`: Path to the CSV file containing the decision matrix.
+- `Weights`: Comma-separated weights for each criterion.
+- `Impacts`: Comma-separated impact direction for each criterion (`+` for maximization, `-` for minimization).
+- `ResultFileName`: Name of the file to save the TOPSIS results.
 
-```bash
-pip install Topsis-Himanshu-102103568
+## Requirements
+
+- Python 3
+- pandas
+- numpy
+
+## Input File Format
+
+## Output
+
+The script generates a CSV file containing the TOPSIS score and rank for each object:
+
+
+## Error Handling
+
+- If the input file is not found, an error message will be displayed.
+- If the number of weights, impacts, or columns in the decision matrix is incorrect, a `ValueError` will be raised.
+- If the columns from the 2nd to the last do not contain numeric values, a `ValueError` will be raised.
+- Any unexpected errors during the execution will be displayed.
+
 ```
-
-### Parameters
-
-- `<InputDataFile>`: CSV file containing the input data.
-- `<Weights>`: Comma-separated weights for each criterion.
-- `<Impacts>`: Comma-separated impact values for each criterion (`+` for benefit, `-` for cost).
-- `<ResultFileName>`: Name of the file to save the TOPSIS result.
-
