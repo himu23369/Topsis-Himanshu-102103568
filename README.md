@@ -27,7 +27,6 @@ This Python script implements the TOPSIS method for multi-criteria decision-maki
 
 The script generates a CSV file containing the TOPSIS score and rank for each object:
 
-
 ## Error Handling
 
 - If the input file is not found, an error message will be displayed.
