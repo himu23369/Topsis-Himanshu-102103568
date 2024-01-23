@@ -78,4 +78,4 @@ The script generates a CSV file containing the TOPSIS score and rank for each ob
 - If the columns from the 2nd to the last do not contain numeric values, a `ValueError` will be raised.
 - Any unexpected errors during the execution will be displayed.
 
-```
+
