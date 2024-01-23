@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 DESCRIPTION = 'Implementation of Topsis'
 
 setup(
